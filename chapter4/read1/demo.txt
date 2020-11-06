@@ -1,0 +1,5 @@
+oc login -u admin -p redhat https://api.ocp4.example.com:6443
+oc new-project demopipeline
+oc new-app --as-deployment-config jenkins-ephemeral -p MEMORY_LIMIT=2048Mi
+oc get pods
+
